@@ -1,15 +1,24 @@
+const listClass = document.querySelectorAll(".item");
+console.log(`Number of categories: ${listClass.length}`);
 
+listClass.forEach(listEl => {
+    console.log('');
+console.log(`Category: ${listEl.firstElementChild.textContent}`);
+console.log(`Elements: ${listEl.lastElementChild.querySelectorAll('li').length}`);
 
+ }
+  );
 
+// Number of categories: 3
 
+// Category: Animals
+// Elements: 4
 
+// Category: Products
+// Elements: 3
 
-
-
-const itemEl = document.querySelectorAll(".itemEl > li");
-itemEl.forEach((item) => {
- console.log(item);
-});
+// Category: Technologies
+// Elements: 5
 
 
 
