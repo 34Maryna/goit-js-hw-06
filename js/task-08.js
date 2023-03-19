@@ -14,7 +14,7 @@ const formData = {
     password: password.value,
 }
 console.log(formData)
-form.requestFullscreen();
+form.reset();
     }
 
     
